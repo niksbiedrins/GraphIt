@@ -7,10 +7,13 @@ const createWindow = () => {
     height: 600,
     webPreferences: {
       nodeIntegration: true,
+      devTools: false,
     },
+    
   });
 
   mainWindow.loadFile(path.join(__dirname, 'index.html'));
+  //mainWindow.webContents.openDevTools();
 };
 
 app.whenReady().then(() => {

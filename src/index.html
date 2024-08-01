@@ -2,11 +2,31 @@
 <html>
   <head>
     <meta charset="UTF-8" />
-    <title>Hello World!</title>
+    <title>GraphIt</title>
     <link rel="stylesheet" href="index.css" />
   </head>
   <body>
-    <h1>💖 Hello World!</h1>
-    <p>Welcome to your Electron application.</p>
+    <div id="properties">
+      <h1>Graph Properties</h1>
+      <input type="text" id="graphname" placeholder="Enter Graph Name:">
+    </div>
+
+    <div id="values">
+      <h1>Graph Values</h1>
+      <input type="text" id="x" placeholder="Enter X Axis Value:">
+      <input type="text" id="y" placeholder="Enter Y Axis Value:">
+    </div>
+
+    <div id="buttons">
+      <button id="plotgraph">Plot Graph</button><br>
+      <button id="cleargraph">Clear Graph</button>
+    </div>
+    
+
+    <div id="graphgroup">
+      <canvas id="graph"></canvas>
+    </div>
   </body>
+  <script src="main.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.3/dist/chart.umd.min.js"></script>
 </html>
